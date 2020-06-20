@@ -6343,6 +6343,138 @@ body #about .text-inner {
 	padding: 50px 0px;
 }
 }
+
+
+
+
+#timeline {
+  list-style: none;
+  position: relative;
+  border: 5px solid;
+}
+#timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #4997cd;
+  left: 50%;
+  margin-left: -1.5px;
+}
+#timeline .clearFix {
+  clear: both;
+  height: 0;
+}
+#timeline .timeline-badge {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2em;
+  text-align: center;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: #f5f5f0;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+
+}
+#timeline .timeline-badge span.timeline-balloon-date-day {
+  font-size: 1.4em;
+}
+#timeline .timeline-badge span.timeline-balloon-date-month {
+  font-size: .7em;
+  position: relative;
+  top: -10px;
+}
+#timeline .timeline-badge.timeline-filter-movement {
+  background-color: #ffffff;
+  font-size: 1.7em;
+  height: 35px;
+  margin-left: -18px;
+  width: 35px;
+  top: 40px;
+}
+#timeline .timeline-badge.timeline-filter-movement a span {
+  color: #4997cd;
+  font-size: 1.3em;
+  top: -1px;
+}
+#timeline .timeline-badge.timeline-future-movement {
+  background-color: #ffffff;
+  height: 35px;
+  width: 35px;
+  font-size: 1.7em;
+  top: -16px;
+  margin-left: -18px;
+}
+#timeline .timeline-badge.timeline-future-movement a span {
+  color: #4997cd;
+  font-size: .9em;
+  top: 2px;
+  left: 1px;
+}
+#timeline .timeline-movement {
+	
+  
+  position: relative;
+}
+#timeline .timeline-movement.timeline-movement-top {
+  height: 60px;
+}
+#timeline .timeline-movement .timeline-item {
+  padding: 20px 0;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel {
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  color: #666;
+  padding: 10px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  border-bottom: dashed 1px #4997cd;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul {
+  text-align: right;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li {
+  color: #666;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li span.importo {
+  color: #468c1f;
+  font-size: 1.3em;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul {
+  text-align: left;
+}
+#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul span.importo {
+  color: #e2001a;
+  font-size: 1.3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 body #process {
 	background-color: #fff;
 }
@@ -7166,7 +7298,7 @@ body #contact .center {
 	padding-bottom: 55px;
 }
 body #contact .center h2 {
-	font-size: 36px;
+	font-size: 32px;
 	margin-top: 0;
 	margin-bottom: 20px;
 }
@@ -7188,12 +7320,18 @@ body #features-page {
 /* subsection1 ends /--------------------------------------------------------- */ }
 body #features-page .subsection1 {
 	background-color: #fff;
-	background-image: url(../img/feature_banner1.jpg);
+	background-image: url(../img/collage21.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
+@media screen and (max-width:750px){
+	body #features-page .subsection1 {
+		background-image: url(../img/collage27.jpg);
+				}
+}
 body #features-page .subsection1 .section-heading h1, body #features-page .subsection1 #features h1, body #features-page .subsection1 #about h1, body #features-page .subsection1 #process h1, body #features-page .subsection1 #testimonial h1, body #features-page .subsection1 #about-page-section-3 h1, body #features-page .subsection1 #skills h1, body #features-page .subsection1 #team-member h1, body #features-page .subsection1 #top_banner h1, body #features-page .subsection1 #portfolio h1, body #features-page .subsection1 #faq h1, body #features-page .subsection1 #contact h1, body #features-page .subsection1 #contact-page h1, body #features-page .subsection1 .subsection1 h1, body #features-page .subsection1 .subsection2 h1, body #features-page .subsection1 .subsection3 .right-section h1, body #features-page .subsection3 .subsection1 .right-section h1, body #features-page .subsection1 .subsection3 .left-section h1, body #features-page .subsection3 .subsection1 .left-section h1, body #features-page .subsection1 .subsection4 h1, body #features-page .subsection1 #login-reg h1 {
 	color: #fff;
+	
 }
 body #features-page .subsection1 .section-heading .subheading, body #features-page .subsection1 #features .subheading, body #features-page .subsection1 #about .subheading, body #features-page .subsection1 #process .subheading, body #features-page .subsection1 #testimonial .subheading, body #features-page .subsection1 #about-page-section-3 .subheading, body #features-page .subsection1 #skills .subheading, body #features-page .subsection1 #team-member .subheading, body #features-page .subsection1 #top_banner .subheading, body #features-page .subsection1 #portfolio .subheading, body #features-page .subsection1 #faq .subheading, body #features-page .subsection1 #contact .subheading, body #features-page .subsection1 #contact-page .subheading, body #features-page .subsection1 .subsection1 .subheading, body #features-page .subsection1 .subsection2 .subheading, body #features-page .subsection1 .subsection3 .right-section .subheading, body #features-page .subsection3 .subsection1 .right-section .subheading, body #features-page .subsection1 .subsection3 .left-section .subheading, body #features-page .subsection3 .subsection1 .left-section .subheading, body #features-page .subsection1 .subsection4 .subheading, body #features-page .subsection1 #login-reg .subheading {
 	color: #fff;
@@ -7203,7 +7341,7 @@ body #features-page .subsection1 .wpb_column > .wpb_wrapper > *:last-child {
 }
 body #features-page .subsection1 .wpb_column {
 	background-repeat: repeat;
-	background-size: cover;
+	background-size: cover
 }
 body #features-page .subsection1 .iconbox {
 	margin: 0 0 40px 0;
@@ -7223,9 +7361,11 @@ body #features-page .subsection1 .iconbox i.boxicon {
 	-ms-transition: all 0.08s ease-in;
 	-o-transition: all 0.08s ease-in;
 	transition: all 0.08s ease-in;
+
 }
 body #features-page .subsection1 .flip .icon-color.card .back {
 	color: #fff;
+
 }
 body #features-page .subsection1 .flip {
 	-webkit-perspective: 800;
@@ -7256,18 +7396,23 @@ body #features-page .subsection1 .flip .front, body #features-page .subsection1 
 	transition: 0.5s;
 }
 body #features-page .subsection1 .flip .card .face {
+	
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	text-align: center;
+
+
+
 }
 body #features-page .subsection1 .flip .card .front {
 	position: absolute;
 	z-index: 1;
-	background: #f9f9f9;
+	background: white ;
+	opacity: 70%;
 	border-radius: 4px;
 	backface-visibility: hidden;
-	/* W3C */
+	/* W3C /
 	-webkit-backface-visibility: hidden;
 	/* Safari & Chrome */
 	-moz-backface-visibility: hidden;
@@ -7509,7 +7654,7 @@ body #features-page .subsection4 .grow {
 	transition: all .2s ease-in-out;
 }
 body #features-page .subsection4 .grow:hover {
-	transform: scale(1.1);
+	/*transform: scale(1.1);*/
 }
 body #features-page .subsection4 .pricing-plan .pricing-plan-head {
 	color: #fff;
@@ -7536,10 +7681,12 @@ body #features-page .subsection4 .pricing-plan.pricing-color-true .pricing-plan-
 }
 body #features-page .subsection4 .pricing-plan .pricing-price {
 	background: #fff;
+	color: #15317E;
+	font-family: inherit, sans-serif;
 	box-shadow: inset 0 1px 1px -1px #999999, inset 0 -1px 1px -1px #999999;
 }
 body #features-page .subsection4 .pricing-plan.pricing-color-true .pricing-price {
-	background: rgba(0, 0, 0, 0.08);
+	/*background: rgba(0, 0, 0, 0.1);*/
 	box-shadow: none;
 	margin: 0;
 }
@@ -7550,7 +7697,7 @@ body #features-page .subsection4 .pricing-plan .pricing-price span.pricing-amoun
 	padding: 24px 0 5px 0;
 	margin: 0;
 	line-height: 1;
-	color: #fff;
+	color: #192841;
 }
 body #features-page .subsection4 .pricing-plan .pricing-price span.pricing-per {
 	display: block;
